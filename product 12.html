@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>view more</title>
+        <link rel="stylesheet" href="style2.css" />
+        <link rel="stylesheet" href="cart.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.html">TreaSure</a></div>
+          
+            <div class="navbar">
+              <ul class="navbar">
+                <li><a href="index.html"><span class="desktop">Home</span><i class="fas fa-home mobile"></i></a></li>
+                <li><a href="contact us.html"><span class="desktop">Contact Us</span><i class="fas fa-envelope mobile"></i></a></li>
+                <li><a href="about us.html"><span class="desktop">About Us</span><i class="fas fa-info-circle mobile"></i></a></li>
+              </ul>
+            </div>
+            <div class="cart-icon">
+              <a href="add to cart.html"><iconify-icon icon="ion:cart" class="cart"></iconify-icon></a>
+            </div>
+          </header>
+  <body>
+    <div class = "main-wrapper">
+        <div class = "container">
+            <div class = "product-div">
+                <div class = "product-div-left">
+                    <div class = "img-container">
+                        <img src = "p.1.jpg" alt = "watch">
+                    </div>
+                    <div class = "hover-container">
+                        <div><img src = "p.10"></div>
+                        <div><img src = "p.11.jpg"></div>
+                        <div><img src = "p.18.jpeg"></div>
+                        <div><img src = "p.5.jpeg"></div>
+                        <div><img src = "p.6"></div>
+                    </div>
+                </div>
+                <div class = "product-div-right">
+                    <span class = "product-name">Shoes 12</span>
+                    <span class = "product-price">Rs.1500</span>
+                    <div class = "product-rating">
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star"></i></span>
+                        <span><i class = "fas fa-star-half-alt"></i></span>
+                        <span>(350 ratings)</span>
+                    </div>
+                    <p class = "product-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae animi ad minima veritatis dolore. Architecto facere dignissimos voluptate fugit ratione molestias quis quidem exercitationem voluptas.</p>
+                    <div class="shoe-size-selector">
+                        <label for="shoe-size">Select Size:</label>
+                        <select class="shoe-size" id="shoe-size">
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <!-- Add more size options as needed -->
+                        </select>
+                    </div>
+                    <div class = "btn-groups">
+                        <!-- Add the "data-productid" attribute to the add to cart button -->
+                        <button onclick="addToCart(12, 'shoes 12', 1500, 'image.jpg')" class="add-cart-btn" data-productid="1"><i class="fas fa-shopping-cart"></i>add to cart</button>
+
+
+                    </div>
+                    <div id="confirmation-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="suggested-products">
+        <h2>You May Also Like</h2>
+        <ul>
+          <li>
+            <div class="product-item">
+              <a href="product 10.html"class="link"><img src="p.14.jpeg" alt="Suggested Product 1">
+              <p class="item-name">Suggested Product 1</p>
+              <p class="item-price">$59.99</p></a>
+            </div>
+          </li>
+          <li>
+            <div class="product-item">
+                <a href="product 11.html"class="link"><img src="p.16.jpg" alt="Suggested Product 2">
+              <p class="item-name">Suggested Product 2</p>
+              <p class="item-price">$79.99</p></a>
+            </div>
+          </li>
+          <li>
+            <div class="product-item">
+                <a href="product 12.html"class="link"><img src="p.17.jpeg" alt="Suggested Product 3">
+              <p class="item-name">Suggested Product 3</p>
+              <p class="item-price">$39.99</p></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <footer>
+      <div class="footer0"><h1>TreaSure</h1></div>
+      <div class="footer1">
+          Connect with us at
+          <div class="social-media">
+              <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+              <a href="#"> <ion-icon name="logo-linkedin"></ion-icon> </a>
+              <a href="#"> <ion-icon name="logo-youtube"></ion-icon> </a>
+              <a href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+          </div>
+      </div>
+      <div class="footer2">
+          <div class="product">
+              <div class="heading">Products</div>
+              <div class="div">Sell your Products</div>
+              <div class="div">Advertise</div>
+              <div class="div">Pricing</div>
+              <div class="div">Product Buisness</div>
+          </div>
+          <div class="services">
+              <div class="heading">Services</div>
+              <div class="div">Return</div>
+              <div class="div">Cash Back</div>
+              <div class="div">Affiliate Marketing</div>
+              <div class="div">Others</div>
+          </div>
+          <div class="Company">
+              <div class="heading">Company</div>
+              <div class="div">Complaint</div>
+              <div class="div">Careers</div>
+              <div class="div">Affiliate Marketing</div>
+              <div class="div">Support</div>
+          </div>
+          <div class="Get Help">
+              <div class="heading">Get Help</div>
+              <div class="div">Help Center</div>
+              <div class="div">Privacy Policy</div>
+                <div class="div">Terms & Condition</div>
+              <div class="div">Login</div>
+          </div>
+      </div>
+      <div class="footer3">
+          Copyright ©
+          <h4>TreaSure</h4>
+          2021-2028
+      </div>
+  </footer>
+  <script src="script2.js"></script>
+  <script src="cartjs.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.3/ionicons.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
